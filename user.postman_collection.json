@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "cea3a842-e9e0-4265-bebb-61c79e9dc7ad",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElectroGrid-EG-PowerCompany-Api",
+						"webapi",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/add-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \"id\": 4,\r\n        \"user_name\": \"Ranasinghe TKSA\",\r\n        \"user_nic\": \"987654222V\",\r\n        \"user_address\": \"Poruwadanda, Horana\",\r\n        \"user_zip_code\": \"12400\",\r\n        \"user_contact_number\": \"0711842067\",\r\n        \"user_email\": \"aravinda@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/add-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElectroGrid-EG-PowerCompany-Api",
+						"webapi",
+						"users",
+						"add-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/delete-user/4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/delete-user/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElectroGrid-EG-PowerCompany-Api",
+						"webapi",
+						"users",
+						"delete-user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/update-user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 3,\r\n        \"user_name\": \"Ranasinghe TKSP\",\r\n        \"user_nic\": \"987654321V\",\r\n        \"user_address\": \"Arkavila, Handapangoda\",\r\n        \"user_zip_code\": \"12400\",\r\n        \"user_contact_number\": \"0777909408\",\r\n        \"user_email\": \"ranasinghetksp@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ElectroGrid-EG-PowerCompany-Api/webapi/users/update-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ElectroGrid-EG-PowerCompany-Api",
+						"webapi",
+						"users",
+						"update-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
